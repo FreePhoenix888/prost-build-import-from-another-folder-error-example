@@ -4,6 +4,6 @@ mod settings;
 
 
 
-fn main() -> Result<(), dyn Error> {
+fn main() -> Result<(), Box<dyn Error>> {
     Ok(())
 }
