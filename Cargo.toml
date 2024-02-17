@@ -6,12 +6,9 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-eframe = { version = "0.26.2", features = [
-    "default",
-    "__screenshot", # __screenshot is so we can dump a screenshot using EFRAME_SCREENSHOT_TO
-] }
+prost = "0.12"
+prost-types = "0.12"
+serde = "1.0.196"
 
-# For image support:
-egui_extras = { version = "0.26.2", features = ["default", "image"] }
-env_logger = "0.11.2"
-
+[build-dependencies]
+prost-build = "0.12.3"

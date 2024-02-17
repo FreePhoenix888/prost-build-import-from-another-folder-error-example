@@ -1,0 +1,11 @@
+syntax = "proto3";
+import "storage_settings/storage_settings.proto";
+
+package settings;
+
+
+
+// A snazzy new shirt!
+message Settings {
+  storage_settings.StorageSettings storage_settings = 1;
+}

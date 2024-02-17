@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package storage_settings;
+
+// A snazzy new shirt!
+message StorageSettings {
+  bool should_show = 1;
+  bool should_show_all = 2;
+  bool should_show_none = 3;
+  bool should_show_barrels = 4;
+  bool should_show_merchant_crates = 5;
+  bool should_show_crates_drop_from_npc = 6;
+}
